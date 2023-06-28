@@ -3,7 +3,7 @@
 # bundle install
 docker run -it --rm \
   -v $(pwd):/app \
-  ruby:3.2-slim-bullseye \
+  ruby:3.1-slim-bullseye \
   /bin/bash -c 'apt-get update -qq && apt-get install -y --no-install-recommends build-essential git make && cd /app && gem install bundler && bundle install --jobs 3; echo "LOCK_FILE_UPDATE_EXIT_CODE=$?"'
 
 # Update Changelog
