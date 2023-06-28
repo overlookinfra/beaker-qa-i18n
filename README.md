@@ -23,7 +23,7 @@ Methods to assist in i18n testing
 
 Open a release prep PR and run the release action:
 
-1. Bump the "version" parameter in `lib/beaker-abs/version.rb` appropriately based merged pull requests since the last release.
+1. Bump the "version" parameter in `lib/beaker-qa-i18n/version.rb` appropriately based merged pull requests since the last release.
 2. Run `./release-prep` to update `Gemfile.lock` and `CHANGELOG.md`.
 3. Commit and push changes to a new branch, then open a pull request against `main` and be sure to add the "maintenance" label.
 4. After the pull request is approved and merged, then navigate to Actions --> Release Action --> run workflow --> Branch: main --> Run workflow.
